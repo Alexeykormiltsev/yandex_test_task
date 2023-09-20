@@ -84,12 +84,13 @@
     .events__img:nth-child(4) {
         transform: translateY(0) rotate(2deg);
     }
+
     .events__img::after,
-    .events__img::before{
-     display: none;
+    .events__img::before {
+        display: none;
     }
 
-     .footer {
+    .footer {
         padding: 72px 0;
 
         &__text {
