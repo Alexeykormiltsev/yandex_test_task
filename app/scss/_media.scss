@@ -176,11 +176,14 @@
         &__text {
             font-size: 16px;
             margin-top: 0;
-            margin-bottom: 48px;
+            margin-bottom: 0;
         }
 
         &__imgbox {
             display: none;
+        }
+        .slider{
+         display: block;
         }
 
         &__slider {
@@ -208,9 +211,6 @@
             margin-top: -130px;
         }
 
-        // &__items {
-        //     align-items: start;
-        // }
 
         &__none {
             display: none;
