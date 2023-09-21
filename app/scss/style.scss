@@ -6,19 +6,25 @@
 
 .header {
     padding: 0 0 44px 0;
-    background-image: url(../images/bg.jpg);
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%), url(../images/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
     &__content {
         display: flex;
         // justify-content: space-between;
+        align-items: center;
     }
 
     &__textbox {
         max-width: 420px;
         z-index: 1;
         margin-top: 110px;
+    }
+
+    &__imgbox {
+        position: relative;
+        margin-left: -270px;
     }
 
     &__title {
@@ -58,11 +64,6 @@
             margin-left: 6px;
             line-height: 120%;
         }
-    }
-
-    &__img {
-        margin-left: -270px;
-
     }
 
     &__img2 {
@@ -186,6 +187,14 @@
 }
 
 .offer {
+    &__mobile {
+        display: none;
+        margin-top: 160px;
+        margin-bottom: 100px;
+    }
+    &__img{
+     object-fit: contain;
+    }
 
     &__wrapper {
         display: flex;
@@ -229,14 +238,14 @@
 }
 
 .footer {
-    padding-bottom: 110px;
+    padding: 110px 0;
 
     &__text {
         color: #C5C5C5;
         @extend %text-400;
         font-size: 13px;
         line-height: 120%;
-        max-width: 906px;
+        max-width: 90%;
         margin: auto;
 
         a {
